@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kanallar>
+    <kanal>
+        <kanaladi>
+            HEDE TV
+        </kanaladi>
+        <kanalip>
+            239.1.1.1
+        </kanalip>
+    </kanal>
+    <kanal>
+        <kanaladi>
+            HODE TV
+        </kanaladi>
+        <kanalip>
+            239.1.1.2
+        </kanalip>
+    </kanal>
+</kanallar>
