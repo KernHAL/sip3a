@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<kanallar>
+    <kanal>
+        <kanaladi>
+            RADYO HEDE
+        </kanaladi>
+        <kanalip>
+            239.100.1.1
+        </kanalip>
+    </kanal>
+    <kanal>
+        <kanaladi>
+            RADYO HODE
+        </kanaladi>
+        <kanalip>
+            239.100.1.2
+        </kanalip>
+    </kanal>
+</kanallar>
