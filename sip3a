@@ -1,0 +1,82 @@
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+#filename: sip3a
+
+
+import sys
+
+sys.path.append('./scripts')
+
+import hafiye
+import izci
+import katip
+import ulak
+
+from optparse import OptionParser
+
+
+def main():
+    usage = "%prog [options] args"
+    version = "%prog 0.5.0"
+    parser = OptionParser(usage=usage, version=version)
+
+    #TODO:
+    """
+    update switches:
+        -p :post (replace -d:deliver)
+        -f :force
+        -t :target (replace -f:file)
+        -c :check (not decided yet)
+    """
+
+    parser.add_option("-f", "--file", type="string",
+            action="store", dest="source_file",
+            help="defines the xml source file which stores the name and ip values of the registered channels")
+    parser.add_option("-s", "--search", type="string",
+            action="store", dest="search_string",
+            help="shows the search results of the given string and exit")
+    parser.add_option("-l", "--list", type="string",
+            action="store", dest="list_type",
+            help="shows a table created with the data retrieved from the xml source file, sorted by given condition and exit")
+    parser.add_option("-a", "--add", type="string",
+            action="store", dest="channel_to_add", nargs=2,
+            help="registers the channel with the given name and ip value to the source xml file and exit")
+    parser.add_option("-r", "--remove", type="string",
+            action="store", dest="channel_to_remove",
+            help="removes the channel data of the name given channel from the source xml file and exit")
+    parser.add_option("-d", "--deliver", type="string",
+            action="store", dest="target_hosts",
+            help="delivers edited xml file to target hosts and exits.")
+
+    parser.set_defaults(source_file="./data/TVGenel.xml")
+    parser.set_defaults(list_type="std")
+    (options, args) = parser.parse_args()
+
+    if options.search_string != None:
+        izci.iz_sur(options.search_string)
+        sys.exit()
+    elif options.channel_to_add != None:
+        kanaladi = options.channel_to_add[0]
+        kanalip = options.channel_to_add[1]
+        sipa = katip.Katip(options.source_file)
+        sipa.kanal_ekle(kanaladi, kanalip)
+        sys.exit()
+    elif options.channel_to_remove != None:
+        kanaladi = options.channel_to_remove
+        sipa = katip.Katip(options.source_file)
+        sipa.kanal_sil(kanaladi)
+        sys.exit()
+    elif options.target_hosts != None:
+        ulak.dagit(options.target_hosts)
+        sys.exit()
+    elif options.list_type != None:
+        sipa = hafiye.Hafiye()
+        sipa.Parse(options.source_file)
+        sipa.listele(options.list_type)
+        sys.exit()
+
+#parser.error   parser.error("--add ve --remove secimlikleri birlikte kullanilamaz.")
+
+if __name__ == '__main__':
+    main()
