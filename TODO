@@ -1,15 +1,6 @@
 TODO LIST of sip3a:
 -------------------------------------------------------------------------------------------
-    +-add support for multi-threaded delivery of the xml-file, use system utils!
-    +-add support for removing nodes from the xml-tree
-    +-add support for adding nodes to the xml-tree
-    +-add support for searching certain elements
-    +-add exception handling
-    +-remove the bug causes TVGenel.xml to be erased when attempting insert a unicode entry
-    +-add more verbosity
     --maybe a GUI
-    +-add logging support
     --add installation script
     --add support to db
     --make ip based listing more accurate
-    +-add check for unique kanalip
