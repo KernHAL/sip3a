@@ -1,0 +1,26 @@
+<hedefler>
+<grup id = 'tv'>
+<sunucu>
+    <sadi>ystv001</sadi>
+    <cyay_ip>172.16.1.11</cyay_ip>
+    <depo_ip>198.162.0.11</depo_ip>
+</sunucu>
+<sunucu>
+    <sadi>ystv002</sadi>
+    <cyay_ip>172.16.1.12</cyay_ip>
+    <depo_ip>198.162.0.12</depo_ip>
+</sunucu>
+</grup>
+<grup id = 'rd'>
+<sunucu>
+    <sadi>ysradyo001</sadi>
+    <cyay_ip>172.16.1.11</cyay_ip>
+    <depo_ip>198.162.0.11</depo_ip>
+</sunucu>
+<sunucu>
+    <sadi>ysradyo002</sadi>
+    <cyay_ip>172.16.1.12</cyay_ip>
+    <depo_ip>198.162.0.12</depo_ip>
+</sunucu>
+</grup>
+</hedefler>
