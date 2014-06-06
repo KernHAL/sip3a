@@ -1,14 +1,10 @@
----------------README file of sip3a-----------------------
+sip3a programını RTÜK bünyesinde geliştirilen SKAAS projesi kapsamında takibi
+öngörülen tv ve rd kanallarına verilen stream-ip lerinin takibini, yenilerinin
+eklenmesini, mevcut olanlarının değiştirilmesini veya silinmesini ve ardından
+yapılan bütün değişikliklerin ilgili tüm sunuculara dağıtılmasını sağlamak
+için geliştirildim.
 
-
-sip3a programını RTÜK bünyesinde geliştirilen
-SKAAS projesi kapsamında takibi öngörülen tv ve
-rd kanallarına verilen stream-ip lerinin takibini,
-yenilerinin eklenmesini, mevcut olanlarının 
-değiştirilmesini veya silinmesini ve ardından 
-yapılan bütün değişikliklerin ilgili tüm sunuculara
-dağıtılmasını sağlamak üzere geliştirildim.
-    Aşağıda sip3a nın değişik kullanımlarını veriyorum:
+Aşağıda sip3a nın değişik kullanımlarını veriyorum:
 
 ------------------------------------------------------
 kanal sorgulama:
