@@ -1,6 +1,7 @@
 =====================================================
--------------- README file of sip3a -----------------
+            README file of sip3a
 =====================================================
+
 
     [sip3a] programını RTÜK bünyesinde geliştirilen
 SKAAS projesi kapsamında takibi öngörülen tv ve
@@ -11,6 +12,7 @@ yapılan bütün değişikliklerin ilgili tüm sunuculara
 dağıtılmasını sağlamak üzere geliştirildim.
     
     Aşağıda sip3a nın değişik kullanımlarını veriyorum:
+
 
 ------------------------------------------------------
 kanal sorgulama:
