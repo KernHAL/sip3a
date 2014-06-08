@@ -9,25 +9,25 @@ için geliştirildim.
 
 Aşağıda sip3a nın değişik kullanımlarını veriyorum:
 
-kanal sorgulama:
+Kanal sorgulama:
 
             sip3a --search='KANAL 1'
 
-kanalları listeleme:
+Kanalları listeleme:
 
             sip3a --list
             sip3a --list=kadi
             sip3a --list=ip
 
-kanal ekleme:
+Kanal ekleme:
 
             sip3a --add='DISCOVERY CHANNEL' 239.1.1.40
 
-kanal çıkarma:
+Kanal çıkarma:
 
             sip3a --remove='DISCOVERY CHANNEL'
 
-kanal listesini dağıtma:
+Kanal listesini dağıtma:
 
             sip3a --deliver=tv
             sip3a --deliver=rd
