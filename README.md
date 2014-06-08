@@ -1,3 +1,6 @@
+sip3a nedir?
+=====================================================
+
 sip3a programını RTÜK bünyesinde geliştirilen SKAAS projesi kapsamında takibi
 öngörülen tv ve rd kanallarına verilen stream-ip lerinin takibini, yenilerinin
 eklenmesini, mevcut olanlarının değiştirilmesini veya silinmesini ve ardından
